@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: repairs
+#
+#  id           :bigint(8)        not null, primary key
+#  user_id      :integer
+#  computer_tag :string(255)
+#  status       :integer
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  computer_tag: MyString
+  status: 
+
+two:
+  user_id: 
+  computer_tag: MyString
+  status: 

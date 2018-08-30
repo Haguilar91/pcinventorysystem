@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: computers
+#
+#  id         :bigint(8)        not null, primary key
+#  tag        :string(255)
+#  ticket     :integer
+#  model_id   :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tag: MyString
+  ticket: 
+  model_id: 
+
+two:
+  tag: MyString
+  ticket: 
+  model_id: 

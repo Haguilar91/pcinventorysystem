@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @repair.user_id %>
+</p>
+
+<p>
+  <strong>Computer tag:</strong>
+  <%= @repair.computer_tag %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @repair.status %>
+</p>
+
+<%= link_to 'Edit', edit_repair_path(@repair) %> |
+<%= link_to 'Back', repairs_path %>
