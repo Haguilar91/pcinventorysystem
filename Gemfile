@@ -27,7 +27,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem "bootstrap_form", ">= 4.1.0"
+gem  "rails_refactor"
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -58,6 +59,7 @@ group :development do
   gem 'rubocop', require: false
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem "better_errors"
+  gem 'rails-erd'
 end
 
 group :test do

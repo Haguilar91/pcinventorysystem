@@ -64,10 +64,9 @@
 #      rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create
 
 Rails.application.routes.draw do
+  resources :equipment
   resources :projects
-  #devise_for :users
-
-   devise_for :users
+  devise_for :users
    
 devise_scope :user do
  root :to => 'devise/sessions#new'
@@ -77,7 +76,6 @@ end
   resources :models
   resources :repairs
   resources :comments
-  resources :computers
 
  
 
@@ -86,5 +84,6 @@ end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
+ #config.assets.prefix = '/assetz'
 
 end

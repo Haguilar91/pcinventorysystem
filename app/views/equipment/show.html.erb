@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @equipment.name %>
+</p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @equipment.tag %>
+</p>
+
+<p>
+  <strong>Serial:</strong>
+  <%= @equipment.serial %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @equipment.type %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @equipment.model %>
+</p>
+
+<p>
+  <strong>Maker:</strong>
+  <%= @equipment.maker %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @equipment.details %>
+</p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @equipment.project_id %>
+</p>
+
+<p>
+  <strong>Ticket:</strong>
+  <%= @equipment.ticket_id %>
+</p>
+
+<%= link_to 'Edit', edit_equipment_path(@equipment) %> |
+<%= link_to 'Back', equipment_index_path %>

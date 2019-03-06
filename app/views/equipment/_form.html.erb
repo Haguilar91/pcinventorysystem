@@ -1,0 +1,79 @@
+<%= bootstrap_form_for(@equipment) do |form| %>
+  <% if equipment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(equipment.errors.count, "error") %> prohibited this asset from being saved:</h2>
+
+      <ul>
+      <% equipment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-8">
+        <div class="field">
+
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.text_field :tag %>
+  </div>
+
+  <div class="field">
+  
+    <%= form.text_field :serial %>
+  </div>
+
+  <div class="field">
+
+      <%= form.select :type, options_for_select([["Computer"], ["Screen"],["Mouse"],  ["Keyboard"] , ["SSD"], ["HDD"],["HDMI Adapter"],["GPU"]], :selected => @equipment.type), {}  %>
+ 
+  
+  </div>
+
+  <div class="field">
+ 
+    <%= form.text_field :model %>
+  </div>
+
+  <div class="field">
+ 
+    <%= form.text_field :maker %>
+  </div>
+
+  <div class="field">
+   
+    <%= form.text_area :details %>
+  </div>
+
+  <div class="field">
+    
+    <%= form.text_field :project_id %>
+  </div>
+
+  <div class="field">
+    
+    <%= form.text_field :ticket_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+				</div>
+				<div class="col-md-2">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+  
+<% end %>
